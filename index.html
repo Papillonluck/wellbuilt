@@ -792,6 +792,22 @@ footer a {
   .market-shift-grid {
     grid-template-columns: 1fr 1fr !important;
   }
+
+  /* Make comparison chart row labels darker on mobile to match blush column text */
+  .chart-row-labels > div {
+    color: var(--mid) !important;
+    font-size: 12px !important;
+  }
+
+  /* Tighten gap between previous section's last paragraph and the comparison chart on mobile */
+  section[style*="margin: 52px 0 52px"] {
+    margin-top: 12px !important;
+  }
+
+  /* Tighten gap between the pullquote-ending section and the programme section that follows on mobile */
+  .programme-section {
+    padding-top: 16px !important;
+  }
 }
 
 
@@ -1130,7 +1146,7 @@ footer a {
 </section>
 
 <!-- PROGRAMME -->
-<section style="border-top: 0.5px solid var(--rule); padding-top: 52px; margin: 0;">
+<section class="programme-section" style="border-top: 0.5px solid var(--rule); padding-top: 52px; margin: 0;">
   <h3>The Founder Reputation Operating System</h3>
   <h2>The same methodology behind a £5,000 Voice Playbook and £4,500/month founder ghostwriting engagements, turned into a system founders can own themselves.</h2>
 
@@ -1190,7 +1206,7 @@ footer a {
       <div style="font-size: 12px; color: #C8C8C0; line-height: 1.4;">Owned permanently. Team and AI execute in founder voice.</div>
     </div>
 
-    <div style="padding: 0;">
+    <div class="chart-row-labels" style="padding: 0;">
       <div style="min-height: 96px; padding: 16px 0; border-top: 0.5px solid var(--rule); border-bottom: 0.5px solid var(--rule); font-size: 11px; color: var(--soft); display: flex; align-items: center;">Sounds like the founder</div>
       <div style="min-height: 96px; padding: 16px 0; border-bottom: 0.5px solid var(--rule); font-size: 11px; color: var(--soft); display: flex; align-items: center;">AI sounds like the founder</div>
       <div style="min-height: 96px; padding: 16px 0; border-bottom: 0.5px solid var(--rule); font-size: 11px; color: var(--soft); display: flex; align-items: center;">Your real thinking gets published, not brand content</div>
