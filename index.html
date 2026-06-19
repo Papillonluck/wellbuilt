@@ -1255,6 +1255,7 @@ footer a {
 }
 @keyframes credscroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media (max-width: 680px){#cred-strip{--ls:0.55}}
+.pill-br{display:none}@media (max-width: 680px){.pill-sep{display:none}.pill-br{display:inline}}
 </style>
 </head>
 <body>
@@ -1269,7 +1270,7 @@ footer a {
 <!-- HERO -->
 <section>
   <div style="display: flex; margin-bottom: 28px;">
-    <div style="display: inline-block; border: 0.5px solid var(--accent); border-radius: 0; padding: 9px 18px; margin-left: -18px; font-family: 'DM Sans', -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink);">Founder Reputation Operating System · Live Intake 01 · 30 Places</div>
+    <div style="display: inline-block; border: 0.5px solid var(--accent); border-radius: 0; padding: 9px 18px; margin-left: 0; font-family: 'DM Sans', -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink);">Founder Reputation Operating System<span class="pill-sep"> · </span><br class="pill-br">Live Intake 01 · 30 Places</div>
   </div>
   <h1>You're more impressive in person than you appear online, and that gap is costing you.</h1>
 
@@ -1303,7 +1304,7 @@ footer a {
 </section>
 
 <!-- WHICH FOUNDER ARE YOU -->
-<section style="padding-top: 52px; margin: 0;">
+<section style="border-top: 0.5px solid var(--rule); padding-top: 52px; margin: 0;">
   <div style="background: var(--blush); border-radius: 0; padding: 56px 52px;">
     <p style="font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink); margin: 0 0 18px;">Which founder are you?</p>
     <h2 style="font-family: Georgia, serif; font-weight: normal; font-size: 34px; line-height: 1.22; letter-spacing: -0.01em; color: var(--charcoal); margin: 0 0 30px; max-width: 640px;">There are two founders online, and both are stuck for the same reason. Which one are <em>you</em>?</h2>
